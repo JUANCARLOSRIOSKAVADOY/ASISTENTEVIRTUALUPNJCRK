@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+ 
+    <title>Asisitente Virtual</title> 
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/jvectormap/jquery-jvectormap-1.2.2.css")"> 
+    <link rel="stylesheet" href="@Url.Content("~/Content/bootstrap/css/bootstrap.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/font-awesome.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/themify-icons.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/animate.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/datatables/jquery.dataTables.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/bootstrap-switch/bootstrap-switch.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/chosen/chosen.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/skins/palette.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/fonts/font.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/main.css")">
+ 
+    <script src="@Url.Content("~/Content/plugins/jquery-1.11.1.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/general.js")"></script>
+
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+ 
+    <script src="@Url.Content("~/Content/plugins/icheck/icheck.js")"></script>    
+    <script src="@Url.Content("~/Content/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/modernizr.js")"></script>
+</head>
+<body>
+    <div class="app">
+        @Html.Partial("Header")
+        <section class="layout">
+            @Html.Partial("Sidebar")
+
+                <section class="main-content">
+                    <div class="content-wrap"> 
+                        <div class="wrapper">
+                            @RenderBody()
+                        </div>
+                    </div>
+                </section>
+
+        </section>
+    </div>
+
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/jquery.slimscroll.min.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/jquery.easing.min.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/appear/jquery.appear.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/jquery.placeholder.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/fastclick.js")"></script> 
+    <script src="@Url.Content("~/Content/plugins/jquery.blockUI.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/jvectormap/jquery-jvectormap-world-mill-en.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/jquery.sparkline.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/flot/jquery.flot.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/flot/jquery.flot.resize.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/count-to/jquery.countTo.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/bootstrap-switch/bootstrap-switch.min.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/datatables/jquery.dataTables.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/chosen/chosen.jquery.min.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/parsley.min.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/icheck/icheck.js")"></script>
+    @{/*<script src="@Url.Content("~/Content/js/dashboard.js")"></script>*/}
+    <script src="@Url.Content("~/Content/js/offscreen.js")"></script>
+    @{/*<script src="@Url.Content("~/Content/js/form-custom.js")"></script>*/}
+    <script src="@Url.Content("~/Content/js/main.js")"></script>
+</body>
+</html>

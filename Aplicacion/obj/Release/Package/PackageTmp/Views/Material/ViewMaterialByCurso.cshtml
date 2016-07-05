@@ -1,0 +1,71 @@
+﻿@using Entidades
+@{
+    ViewBag.Title = "ViewMaterialByCurso";
+    Layout = "~/Views/Shared/PageMaster.cshtml";
+
+    BeCursoMaterial CursoMaterial = ViewBag.CursoMaterial as BeCursoMaterial;
+}
+
+<div class=gallery-loader>
+    <div class=loader></div>
+</div>
+<div class="superbox hide">
+    @foreach (BeMaterial obj in CursoMaterial.lstMaterial)
+    {
+        <div class=superbox-list data-cursoid="@obj.curso.id" data-materialid="@obj.id">
+            <img src="@Url.Content("~/Images/Curso/online.png")" alt="" class=superbox-img />
+            <div class=gallery-description>
+                <span class= title>
+                    <strong>@obj.descripcion</strong>
+                </span>
+                <!--<small class=sub-title>Rockablepress.com</small> -->
+            </div>
+        </div>
+    }
+
+    <div class=superbox-float></div>
+</div>
+
+<div class="modal fade bs-modal-sm" tabindex=-1 role=dialog aria-hidden=true data-toggle="modal" data-backdrop="static" data-keyboard="false"> 
+    <div class=modal-dialog> 
+    <div class=modal-content> 
+        <div class=modal-header> 
+        <!--<button type=button class=close data-dismiss=modal aria-hidden=true>×</button> -->
+        <h4 class=modal-title>Evaluación</h4> </div> 
+        <div class=modal-body> 
+        <p>Feel free to contact us for any issues you might have with our products.</p> 
+        <div class=row> 
+            <div class=col-xs-6> 
+            <label>Name</label> 
+            <input class=form-control placeholder=Name> 
+            </div> 
+        <div class=col-xs-6> 
+            <label>Email</label> 
+            <input class=form-control placeholder=Email> 
+        </div> </div> 
+        <div class=row> 
+        <div class=col-xs-12>
+             <label>Message</label> 
+            <textarea class=form-control rows=3></textarea> 
+        </div> 
+        </div> 
+        </div> 
+        <div class=modal-footer> 
+            <button type=button class="btn btn-default btn-cancel" data-dismiss=modal>Cancelar</button>
+            <button type=button class="btn btn-success btn-start-question">Empezar</button>
+            <button type=button class="btn btn-success btn-next hide" disabled data-preg=0>Siguiente</button>
+            <button type=button class="btn btn-success btn-finish hide" data-cursoid=0 data-materialid=0>Finalizar</button>
+        </div> 
+        </div> 
+    </div> 
+</div>
+
+
+
+<script src="@Url.Content("~/Content/plugins/isotope/isotope.pkgd.min.js")"></script>
+<script src="@Url.Content("~/Content/plugins/imagesloaded/imagesloaded.js")"></script>
+<script src="@Url.Content("~/Content/plugins/superbox/superbox.min.js")"></script>
+<script src="@Url.Content("~/Content/js/offscreen.js")"></script>
+
+
+<script src="@Url.Content("~/Scripts/Material/material.js")"></script>

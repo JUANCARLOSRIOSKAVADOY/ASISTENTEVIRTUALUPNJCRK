@@ -1,0 +1,26 @@
+﻿<div class="row form-horizontal">
+    <div class="col-md-12 row-filtros-listado">
+        <div class="form-group">
+            <div class="col-md-6">
+                <label class="col-sm-6 control-label">Descripción</label>
+                <div class="col-sm-6">
+                    @{
+                        ViewBag.TabIndex = 1;
+                    }
+                    @Html.Partial("Controles/TextBoxDescripcion")
+                    @{ViewBag.Id = "";}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="col-sm-6 control-label">Descripción</label>
+                <div class="col-sm-6">
+                    @{
+                        ViewBag.TabIndex = 2;
+                    }
+                    @Html.Partial("Controles/DropdownEstado")
+                    @{ViewBag.Id = "";}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

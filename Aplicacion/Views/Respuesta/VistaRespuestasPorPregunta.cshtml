@@ -1,0 +1,51 @@
+﻿@using Entidades
+@{ 
+    List<BeRespuesta> respuestas = ViewBag.respuestas as List<BeRespuesta>;
+}
+
+@{
+
+    if (respuestas.Count == 0)
+    {
+        <div class="alert alert-danger"> <strong>Oh no!</strong>Esta pregunta aún no tiene respuesta(s). </div>
+    }
+    else if (respuestas.Count == 1)
+    {
+        <div style="color:black;"><p>La respuesta es: </p> <div class="mb10"> </div></div>
+        <section class="widget"> 
+            <div class="widget-body bg-primary"> 
+                    <div class="text-white"><p>@respuestas[0].descripcion</p> <div class="mb10"> </div></div> 
+            </div> 
+        </section>
+        <div style="text-align:right;">
+            <button data-respuestaid="@respuestas[0].id" type="button" class="btn btn-danger btn-sm mr5 btn_eliminar_respuesta"> Eliminar <i class="ti-alert mr5"></i> </button>
+        </div>
+    }
+    else if (respuestas.Count > 1)
+    {
+        <table class="table no-m">
+            <thead>
+                <tr>
+                    <th class="col-md-5 pd-l-lg">
+                        <span class="pd-l-sm"></span>Respuesta
+                    </th>
+                    <th class="col-md-2"> </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (BeRespuesta obj in respuestas)
+                {
+                    <tr>
+                        <td> <span class="pd-l-sm"></span>@obj.descripcion </td>
+                        <td>
+                            <a href="javascript:ListadoRespuesta.delete_respuesta(@obj.id);" class="btn btn-default btn-sm mr5"> <i class="fa fa-remove text-danger"></i> </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+}
+
+<script src="@Url.Content("~/Scripts/Respuesta/ListadoRespuesta.js")"></script>

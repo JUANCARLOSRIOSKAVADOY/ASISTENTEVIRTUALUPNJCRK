@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Bienvenida";
+    Layout = "~/Views/Shared/PageMaster.cshtml";
+}
+
+@using Entidades
+@{
+    List<BeMenu> listado = ViewBag.ListadoMenu as List<BeMenu>;
+}
+
+
+@if (listado.Count > 0)
+{
+    <div class="row">
+
+        @foreach (BeMenu obj in listado)
+        {
+            if (obj.enBienvenida)
+            {
+                <div class="col-md-4">
+                    <section class="panel no-b">
+                        <div class="panel-body">
+                            <a href="@obj.url" class="show text-center">
+                                <img src="@Url.Content(obj.image)" class="avatar avatar-lg img-circle" alt="">
+                            </a>
+                            <div class="show mt15 mb15 text-center">
+                                <div class="h5"><b>@obj.descripcion</b> </div>
+                                <!--<p class="show text-muted">San Francisco, CA</p>-->
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            }
+        }
+    </div>
+}
+else
+{
+    <div class="row"> 
+        <div class="col-md-4"> 
+            <section class="panel no-b"> 
+                <div class="panel-body"> 
+                    <a href="javascript:;" class="show text-center"> 
+                        <img src="images/avatar.10d02c68.jpg" class="avatar avatar-lg img-circle" alt=""> 
+                    </a> 
+                    <div class="show mt15 mb15 text-center"> 
+                        <div class="h5"><b>Gerald Morris</b> </div> 
+                        <p class="show text-muted">San Francisco, CA</p> 
+                    </div> 
+                </div> 
+            </section> <section class="widget"> <div class="cover rounded" style="background-image: url(images/DeathtoStock_Wired5.7ed7160f.jpg)"></div> <div class="overlay rounded bg-primary"></div> <div class="widget-body"> <div class="text-white"> <br> <p>Shaw, those twelve beige hooks are joined if I patch a young, gooey mouth. </p> <div class="mb10"> <a href="javascript:;" class="text-muted mr15"> <i class="ti-comment mr5"></i>3523 </a> <a href="javascript:;"> <i class="ti-heart text-danger mr5"></i>12K </a> </div> <ul class="text-white list-style-none"> <span class="fa fa-star text-danger"></span> <span class="fa fa-star text-danger"></span> <span class="fa fa-star text-danger"></span> <span class="fa fa-star-o"></span> <span class="fa fa-star-o"></span> </ul> <a href="javascript:;" class="show small">getbootstrap.com</a> </div> </div> </section> <section class="panel position-relative"> <div class="panel-body"> <a href="javascript:;" class="pull-left mr15"> <img src="images/avatar.10d02c68.jpg" class="avatar avatar-sm img-circle" alt=""> </a> <div class="overflow-hidden"> <p class="no-m"> <b>Gerald Morris</b> <i class="fa fa-star toggle-active ml5 mr5 active"></i> </p> <small>Apple</small> </div> <div class="mt10 mb10"> <a class="btn btn-social btn-xs btn-facebook mr5"><i class="fa fa-facebook"></i>Facebook </a> <a class="btn btn-social btn-xs btn-twitter mr5"><i class="fa fa-twitter"></i>Twitter </a> <a class="btn btn-social btn-xs btn-github mr5"><i class="fa fa-github"></i>Github </a> </div> <p class="small"> <i class="fa fa-circle text-primary mr5"></i>Hope you can help. How can I get the sidebar widgets to appear on post pages? At the moment they only appear on the homepage. </p> </div> </section> <section class="panel panel-primary"> <header class="panel-heading"> <div class="h5"> <i class="fa fa-facebook-square mr5"></i> <b>Facebook</b> </div> </header> <footer class="panel-footer text-center"> <div class="row"> <div class="col-xs-4"> <div class="small show text-uppercase text-muted">Friends</div> <div class="h4 no-m"><b>5434</b> </div> </div> <div class="col-xs-4"> <div class="small show text-uppercase text-muted">Photos</div> <div class="h4 no-m"><b>894</b> </div> </div> <div class="col-xs-4"> <div class="small show text-uppercase text-muted">Messages</div> <div class="h4 no-m"><b>08</b> </div> </div> </div> </footer> </section> </div>
+    </div>
+}

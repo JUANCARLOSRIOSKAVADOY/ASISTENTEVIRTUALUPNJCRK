@@ -1,0 +1,155 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html class="signin no-js" lang="es">
+<head> 
+    <meta charset="utf-8">
+    <meta name="description" content="Flat, Clean, Responsive, application admin template built with bootstrap 3">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+ 
+    <title>Login</title>
+ 
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/jvectormap/jquery-jvectormap-1.2.2.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/bootstrap/css/bootstrap.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/font-awesome.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/themify-icons.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/animate.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/datatables/jquery.dataTables.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/bootstrap-switch/bootstrap-switch.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/plugins/chosen/chosen.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/skins/palette.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/fonts/font.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/main.css")">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ 
+    <script src="@Url.Content("~/Content/plugins/modernizr.js")"></script>
+</head>
+<body class="bg-danger" style="background:red;">
+    <div class="cover" style="background-image: url(img/cover3.jpg)"></div>
+    <div class="overlay bg-danger" style="background:red;"></div>
+    <div class="center-wrapper">
+        <div class="center-content">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                    <div style="text-align:center;margin-bottom:2em;">
+                        <img src="@Url.Content("~/Images/logo.png")" width="18%">
+                    </div>
+                    <section class="panel bg-white no-b" style="background:yellow;">
+
+                        <div class="p15">
+
+                            <form role="form">
+                                <input type="text" class="form-control input-lg mb25" placeholder="Usuario" autofocus id="dni">
+                                <input type="password" class="form-control input-lg mb25" placeholder="Contraseña" id="psw">
+                                <div class="show" style="margin-bottom:4em;">
+                                    <div class="pull-right">
+                                    <a href="javascript:Login.modal_registro();">Registrate</a>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary btn-lg btn-block" style="background:black;" type="button" id="btnLogin">Login</button>
+                            </form>
+                        </div>
+                    </section>
+                    <p class="text-center">
+                    Copyright &copy;
+                    <span id="year" class="mr5"></span>
+                    <span>Asistente Virtual</span>
+                    </p>
+                </div>
+        </div>
+    </div>
+
+
+    <div id="modal_registro" class="modal fade bs-modal-sm" tabindex=-1 role=dialog aria-hidden=true data-toggle="modal" data-backdrop="static" data-keyboard="false" style="color: #59595a;">
+        <div class=modal-dialog>
+            <div class=modal-content>
+                <div class=modal-header>
+                    <!--<button type=button class=close data-dismiss=modal aria-hidden=true>×</button> -->
+                    <h4 class=modal-title>Registro</h4>
+                </div>
+                <div class=modal-body>
+                    <form id="frm_usuario" role="form" class="form-horizontal" data-parsley-validate="">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">DNI</label>
+                                    <div class="col-sm-4">
+                                        <input class="form-control" id="frm_dni" placeholder="DNI" data-parsley-required="true" data-parsley-trigger="change" data-parsley-type="digits" data-parsley-length="[8, 8]">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Nombres</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" id="nombres" placeholder="Nombres" data-parsley-required="true" data-parsley-trigger="change">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Ap Paterno</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" id="appaterno" placeholder="Apellido Paterno" data-parsley-required="true" data-parsley-trigger="change">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Ap Materno</label>
+                                    <div class="col-sm-6">
+                                        <input class="form-control" id="apmaterno" placeholder="Apellido Materno" data-parsley-required="true" data-parsley-trigger="change">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Contraseña</label>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control" id="frm_psw" placeholder="Contraseña" data-parsley-required="true" data-parsley-trigger="change">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Descripción</label>
+                                    <div class="col-sm-6 icheck">
+                                        <div class="mb5 mt5"> 
+                                            <input type=radio id="rolEstudiante" name="rol" checked> 
+                                            <label>Estudiante</label> 
+                                        </div> 
+                                        <div class=mb5> 
+                                            <input type=radio id="rolDocente" name="rol"> 
+                                            <label>Docente</label> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group text-center">
+                                    <label></label>
+                                    <div>
+                                        <button id="btn_save" class="btn btn-success btn-parsley">Guardar</button>
+                                        <button id="btn_cancel" type="button" class="btn btn-danger">Cancelar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+                <!--<div class=modal-footer>
+                    <button type=button class="btn btn-default btn-cancel" data-dismiss=modal>Cerrar</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var el = document.getElementById("year"),
+            year = (new Date().getFullYear());
+        el.innerHTML = year;
+    </script>
+    <script src="@Url.Content("~/Content/plugins/jquery-1.11.1.min.js")"></script>
+    <script src="@Url.Content("~/Content/plugins/parsley.min.js")"></script>
+    <script src="@Url.Content("~/Content/bootstrap/js/bootstrap.js")"></script>
+    <script src="@Url.Content("~/Scripts/general.js")"></script>
+    <script src="@Url.Content("~/Scripts/login.js")"></script>
+    </body>
+</html>

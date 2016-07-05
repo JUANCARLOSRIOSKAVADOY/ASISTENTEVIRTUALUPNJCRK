@@ -1,0 +1,24 @@
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Entidades\bin\Debug\Entidades.dll
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Entidades\bin\Debug\Entidades.pdb
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Entidades\obj\Debug\Entidades.dll
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Entidades\obj\Debug\Entidades.pdb
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Entidades\bin\Debug\Entidades.dll
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Entidades\bin\Debug\Entidades.pdb
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.dll
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.pdb
+C:\Users\JCRK\Desktop\ASISTENTE VIRTUAL\Entidades\bin\Debug\Entidades.dll
+C:\Users\JCRK\Desktop\ASISTENTE VIRTUAL\Entidades\bin\Debug\Entidades.pdb
+C:\Users\JCRK\Desktop\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\JCRK\Desktop\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.dll
+C:\Users\JCRK\Desktop\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.pdb
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL - PROYECTO\ASISTENTE VIRTUAL\Entidades\bin\Debug\Entidades.dll
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL - PROYECTO\ASISTENTE VIRTUAL\Entidades\bin\Debug\Entidades.pdb
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL - PROYECTO\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL - PROYECTO\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.dll
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL - PROYECTO\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.pdb
+C:\Users\JONATHAN\Desktop\asistentevirtual\ASISTENTE VIRTUAL\Entidades\bin\Debug\Entidades.dll
+C:\Users\JONATHAN\Desktop\asistentevirtual\ASISTENTE VIRTUAL\Entidades\bin\Debug\Entidades.pdb
+C:\Users\JONATHAN\Desktop\asistentevirtual\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.dll
+C:\Users\JONATHAN\Desktop\asistentevirtual\ASISTENTE VIRTUAL\Entidades\obj\Debug\Entidades.pdb

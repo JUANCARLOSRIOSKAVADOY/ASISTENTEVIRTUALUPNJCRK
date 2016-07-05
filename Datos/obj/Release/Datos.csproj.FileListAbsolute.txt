@@ -1,0 +1,9 @@
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Datos\bin\Release\Datos.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Datos\bin\Release\Datos.pdb
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Datos\bin\Release\Entidades.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Datos\bin\Release\Utilitarios.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Datos\bin\Release\Entidades.pdb
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Datos\bin\Release\Utilitarios.pdb
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Datos\obj\Release\Datos.csprojResolveAssemblyReference.cache
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Datos\obj\Release\Datos.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Datos\obj\Release\Datos.pdb

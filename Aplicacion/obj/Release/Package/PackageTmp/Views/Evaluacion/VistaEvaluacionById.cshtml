@@ -1,0 +1,29 @@
+﻿@using Entidades
+@{
+    BeEvaluacion Evaluacion = ViewBag.Evaluacion as BeEvaluacion;
+}
+
+<div class=row>
+    <div class=col-sm-12>
+        <iv class=service>
+            <div class=widget>
+                <div class=widget-body>
+                    <div class="service-description overflow-hidden pl25">
+                        <b><p class="speak">@Evaluacion.pregunta</p></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=col-sm-12>
+        <div class=service>
+            <div class=widget>
+                <div class=widget-body>
+                    <p>
+                        @Evaluacion.respuesta
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

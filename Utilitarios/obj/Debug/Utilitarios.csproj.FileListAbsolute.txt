@@ -1,0 +1,23 @@
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Utilitarios\bin\Debug\Utilitarios.dll
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Utilitarios\bin\Debug\Utilitarios.pdb
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Utilitarios\obj\Debug\Utilitarios.csprojResolveAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Utilitarios\obj\Debug\Utilitarios.dll
+C:\Users\JONATHAN\Desktop\SISCLASEVIRTUAL\Utilitarios\obj\Debug\Utilitarios.pdb
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Utilitarios\bin\Debug\Utilitarios.dll
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Utilitarios\bin\Debug\Utilitarios.pdb
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.csprojResolveAssemblyReference.cache
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.dll
+C:\Users\JONATHAN\Desktop\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.pdb
+C:\Users\JOSELYN\Desktop\ASISTENTE VIRTUAL\Utilitarios\bin\Debug\Utilitarios.dll
+C:\Users\JOSELYN\Desktop\ASISTENTE VIRTUAL\Utilitarios\bin\Debug\Utilitarios.pdb
+C:\Users\JOSELYN\Desktop\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.dll
+C:\Users\JOSELYN\Desktop\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.pdb
+C:\Users\JONATHAN\Desktop\asistentevirtual\ASISTENTE VIRTUAL\Utilitarios\bin\Debug\Utilitarios.dll
+C:\Users\JONATHAN\Desktop\asistentevirtual\ASISTENTE VIRTUAL\Utilitarios\bin\Debug\Utilitarios.pdb
+C:\Users\JONATHAN\Desktop\asistentevirtual\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.dll
+C:\Users\JONATHAN\Desktop\asistentevirtual\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.pdb
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\bin\Debug\Utilitarios.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\bin\Debug\Utilitarios.pdb
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.csprojResolveAssemblyReference.cache
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\obj\Debug\Utilitarios.pdb

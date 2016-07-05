@@ -1,0 +1,5 @@
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\bin\Release\Utilitarios.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\bin\Release\Utilitarios.pdb
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\obj\Release\Utilitarios.csprojResolveAssemblyReference.cache
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\obj\Release\Utilitarios.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Utilitarios\obj\Release\Utilitarios.pdb

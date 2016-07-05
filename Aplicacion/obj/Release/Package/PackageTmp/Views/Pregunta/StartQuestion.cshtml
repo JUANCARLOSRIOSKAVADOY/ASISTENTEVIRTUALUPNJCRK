@@ -1,0 +1,20 @@
+﻿@using Entidades
+@{
+    //BePregunta Pregunta = ViewBag.Pregunta as BePregunta;
+    BeMaterial Material = ViewBag.Material as BeMaterial;
+}
+
+<div class=row>
+    <div class=col-sm-12>
+        @if (Material.esEscritura)
+        {
+            <p>Ahora vamos a empezar el listado de preguntas de escritura.</p>
+        }
+        else
+        {
+            <p>Ahora vamos a empezar el listado de preguntas.</p>
+        }
+    </div>
+</div>
+
+@*<script src="@Url.Content("~/Scripts/sintesis.js")"></script>*@

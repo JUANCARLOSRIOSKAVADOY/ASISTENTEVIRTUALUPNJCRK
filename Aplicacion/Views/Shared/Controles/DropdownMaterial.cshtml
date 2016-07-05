@@ -1,0 +1,53 @@
+﻿@using Entidades;
+@{
+    List<BeMaterial> listado = ViewBag.ListadoMaterial as List<BeMaterial>;
+}
+
+@if (ViewBag.Id != null && ViewBag.Id != "")
+{
+    <select id="@ViewBag.Id" name="@ViewBag.Id" tabindex="@ViewBag.TabIndex">
+        <option value="-1">Seleccione un material</option>
+        @foreach (BeMaterial obj in listado)
+        {
+            if (ViewBag.Value != null)
+            {
+                if (obj.id == ViewBag.Value)
+                {
+                    <option value="@obj.id" selected>@obj.descripcion</option>
+                }
+                else
+                {
+                    <option value="@obj.id">@obj.descripcion</option>
+                }
+            }
+            else
+            {
+                <option value="@obj.id">@obj.descripcion</option>
+            }
+        }
+    </select>
+}
+else
+{
+    <select id="DropdownMaterial" name="DropdownMaterial" tabindex="@ViewBag.TabIndex">
+        <option value="-1">Seleccione un material</option>
+        @foreach (BeMaterial obj in listado)
+        {
+            if (ViewBag.Value != null)
+            {
+                if (obj.id == ViewBag.Value)
+                {
+                    <option value="@obj.id" selected>@obj.descripcion</option>
+                }
+                else
+                {
+                    <option value="@obj.id">@obj.descripcion</option>
+                }
+            }
+            else
+            {
+                <option value="@obj.id">@obj.descripcion</option>
+            }
+        }
+    </select>
+}

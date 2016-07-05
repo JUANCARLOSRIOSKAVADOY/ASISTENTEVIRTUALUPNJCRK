@@ -1,0 +1,46 @@
+﻿@using Entidades
+@{
+    ViewBag.Title = "PreguntaEntrenamiento";
+    Layout = "~/Views/Shared/PageMaster.cshtml";
+}
+@{
+    BeCurso Curso = ViewBag.Curso as BeCurso;
+    BeMaterial Material = ViewBag.Material as BeMaterial;
+}
+
+<header class="panel-heading text-uppercase no-b">
+    <h3><b>@Curso.descripcion - @Material.descripcion</b></h3>
+</header>
+
+<div class=row>
+    <div class="col-sm-12">
+        <div class="alert alert-info"> <strong>Atención!</strong> Clic sobre el micrófono para iniciar reconocimiento de voz, otro clic para detenerlo. </div>
+    </div>
+    <div class=col-sm-12>
+        <div class=service>
+            <div class=widget>
+                <div class=widget-body>
+                    <button id="start_button" class="text-center service-icon left huge mt25" data-cursoid="@Curso.id" data-materialid="@Material.id">
+                        <img id="start_img" src="@Url.Content("~/Images/mic.gif")" alt="Start">
+                    </button>
+                    <span id="final_span"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=col-sm-12>
+        <div class=service>
+            <div class=widget>
+                <div class=widget-body>
+                    <div class="text-center service-icon left huge mt25"> <i class=ti-mouse></i> </div>
+                    <div class="service-description overflow-hidden pl25">
+                        <!--<h5 class="nPregunta">RESPONSIVE</h5>-->
+                        <p class="speak"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="@Url.Content("~/Scripts/Pregunta/PreguntaEntrenamiento.js")"></script>

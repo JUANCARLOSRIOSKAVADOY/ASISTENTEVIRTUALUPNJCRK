@@ -1,0 +1,19 @@
+﻿@{
+    String[] Necesarios = ViewBag.Necesarios as String[];
+} 
+
+@foreach (String Necesario in Necesarios)
+{
+    switch (Necesario)
+    {
+            
+        case "Nueva Clase":
+            <div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" id="modal_nueva_clase">
+                <div class="modal-dialog">
+
+                </div>
+            </div>
+            break;
+                                            
+    }
+}

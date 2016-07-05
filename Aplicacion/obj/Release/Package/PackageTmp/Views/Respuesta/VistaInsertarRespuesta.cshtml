@@ -1,0 +1,23 @@
+﻿<form id="frm_ins_respuesta" role="form" class="form-horizontal" data-parsley-validate="">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Respuesta</label>
+                <div class="col-sm-10">
+                    <textarea rows="7" class="form-control" id="ins_respuesta" placeholder="Respuesta" data-parsley-required="true" data-parsley-trigger="change"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group text-center">
+                <label></label>
+                <div>
+                    <button id="btn_save_respuesta" data-preguntaid="@ViewBag.preguntaid" class="btn btn-success btn-parsley">Guardar</button>
+                    <button id="btn_cancel_respuesta" type="button" class="btn btn-danger" data-dismiss=modal>Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form> 
+
+<script src="@Url.Content("~/Scripts/Respuesta/Respuesta.js")"></script>

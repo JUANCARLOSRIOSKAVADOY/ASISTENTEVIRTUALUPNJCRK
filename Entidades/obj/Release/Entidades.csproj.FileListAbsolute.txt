@@ -1,0 +1,4 @@
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Entidades\bin\Release\Entidades.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Entidades\bin\Release\Entidades.pdb
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Entidades\obj\Release\Entidades.dll
+C:\Users\JCRK\Desktop\ASISTENTEVIRTUAL16\ASISTENTE VIRTUAL\Entidades\obj\Release\Entidades.pdb

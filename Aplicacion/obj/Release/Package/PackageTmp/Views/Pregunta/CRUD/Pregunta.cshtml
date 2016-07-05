@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "Pregunta";
+    Layout = "~/Views/Shared/PageMaster.cshtml";
+}
+
+<header class="panel-heading text-uppercase no-b"> 
+    <h3><b>Pregunta</b></h3> 
+</header>
+
+<div class="row"> 
+    <div class="col-md-6">
+        @Html.Partial("CRUD/Listado")
+    </div> 
+    <div class="col-md-6"> 
+        @Html.Partial("CRUD/Formulario")
+    </div> 
+</div>
+
+
+<div id="modal_respuestas" class="modal fade bs-modal-sm" tabindex=-1 role=dialog aria-hidden=true data-toggle="modal" data-backdrop="static" data-keyboard="false">
+    <div class=modal-dialog>
+        <div class=modal-content>
+            <div class=modal-header>
+                <!--<button type=button class=close data-dismiss=modal aria-hidden=true>×</button> -->
+                <h4 class=modal-title>Respuesta</h4>
+            </div>
+            <div class=modal-body>
+                <p>Feel free to contact us for any issues you might have with our products.</p>
+                <div class=row>
+                    <div class=col-xs-12>
+                        <label>Message</label>
+                        <textarea class=form-control rows=3></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class=modal-footer>
+                <button type=button class="btn btn-default btn-cancel" data-dismiss=modal>Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_ins_respuesta" class="modal fade bs-modal-sm" tabindex=-1 role=dialog aria-hidden=true data-toggle="modal" data-backdrop="static" data-keyboard="false">
+    <div class=modal-dialog>
+        <div class=modal-content>
+            <div class=modal-header>
+                <!--<button type=button class=close data-dismiss=modal aria-hidden=true>×</button> -->
+                <h4 class=modal-title>Insertar Respuesta</h4>
+            </div>
+            <div class=modal-body>
+                <p>Feel free to contact us for any issues you might have with our products.</p>
+                <div class=row>
+                    <div class=col-xs-12>
+                        <label>Message</label>
+                        <textarea class=form-control rows=3></textarea>
+                    </div>
+                </div>
+            </div>
+            <!--<div class=modal-footer>
+                <button type=button class="btn btn-default btn-cancel" data-dismiss=modal>Cerrar</button>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+<script src="@Url.Content("~/Scripts/Pregunta/CRUD/Pregunta.js")"></script>

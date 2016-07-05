@@ -1,0 +1,52 @@
+﻿@using Entidades
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/PageMaster.cshtml";
+
+
+    List<BeCurso> ListadoClase = ViewBag.ListadoCurso as List<BeCurso>;
+}
+
+<!--<h2>Index</h2>
+
+  <button id="start_button">
+    <img id="start_img" src="@Url.Content("~/Images/mic.gif")" alt="Start">
+  </button>
+
+<textarea id="final_span">
+
+
+
+</textarea>-->
+
+
+    	<div class=gallery-loader>
+    		<div class=loader></div> 
+    	</div>   
+    	<div class="superbox hide">
+            @foreach (BeCurso obj in ListadoClase)
+            {
+                <a href=@("/Material/ViewMaterialByCursoEntrenamiento?cursoid=" + @obj.id)>
+                    <div class=superbox-list>
+                        <img src="@Url.Content("~/Images/Curso/online.png")" alt="" class=superbox-img />
+                        <div class=gallery-description>
+                            <span class= title>
+                                <strong>@obj.descripcion</strong>
+                            </span>
+                            <!--<small class=sub-title>Rockablepress.com</small> -->
+                        </div>
+                    </div>
+                </a>
+            }
+
+    		<div class=superbox-float></div> 
+    	</div>  
+
+<script src="@Url.Content("~/Content/plugins/isotope/isotope.pkgd.min.js")"></script>
+<script src="@Url.Content("~/Content/plugins/imagesloaded/imagesloaded.js")"></script>
+<script src="@Url.Content("~/Content/plugins/superbox/superbox.min.js")"></script> 
+<script src="@Url.Content("~/Content/js/offscreen.js")"></script>
+
+
+<script src="@Url.Content("~/Content/js/gallery.js")"></script>
+<!-- <script src="@Url.Content("~/Scripts/reconocimiento.js")"></script> -->

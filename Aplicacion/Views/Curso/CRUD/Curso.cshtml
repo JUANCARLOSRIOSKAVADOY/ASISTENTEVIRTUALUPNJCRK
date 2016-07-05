@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Curso";
+    Layout = "~/Views/Shared/PageMaster.cshtml";
+}
+
+<header class="panel-heading text-uppercase no-b">
+    <h3><b>Curso</b></h3>
+</header>
+
+<div class="row"> 
+    <div class="col-md-6">
+        @Html.Partial("CRUD/Listado")
+    </div> 
+    <div class="col-md-6"> 
+        @Html.Partial("CRUD/Formulario")
+    </div> 
+</div>
+
+<script src="@Url.Content("~/Scripts/Curso/CRUD/Curso.js")"></script>

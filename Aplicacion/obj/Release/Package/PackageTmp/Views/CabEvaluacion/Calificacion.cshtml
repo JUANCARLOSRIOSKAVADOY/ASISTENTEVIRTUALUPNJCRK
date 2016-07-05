@@ -1,0 +1,76 @@
+﻿@using Entidades
+@{ 
+    List<BeCabEvaluacion> calificaciones = ViewBag.Calificacion as List<BeCabEvaluacion>;
+}
+@{
+    ViewBag.Title = "Calificacion";
+    Layout = "~/Views/Shared/PageMaster.cshtml";
+}
+
+<h2>Calificacion</h2>
+
+
+<table class="table no-m">
+    <thead>
+        <tr>
+            <th class="col-md-5 pd-l-lg">
+                <span class="pd-l-sm"></span>Curso
+            </th>
+            <th class="col-md-5 pd-l-lg">
+                <span class="pd-l-sm"></span>Material
+            </th>
+            <th class="col-md-5 pd-l-lg">
+                <span class="pd-l-sm"></span>Estudiante
+            </th>
+            <th class="col-md-5 pd-l-lg">
+                <span class="pd-l-sm"></span>Nota
+            </th>
+            <th class="col-md-2"> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (BeCabEvaluacion obj in calificaciones)
+        {
+            <tr>
+                <td> <span class="pd-l-sm"></span>@obj.curso.descripcion</td>
+                <td> <span class="pd-l-sm"></span>@obj.material.descripcion</td>
+                <td> <span class="pd-l-sm"></span>@obj.usuario.ap_paterno @obj.usuario.ap_materno, @obj.usuario.nombres</td>
+                <td><input type="number" min="0" inputmode="numeric" max="20" id="nota_@obj.cabevaluacionid" value="@( Convert.ToInt32(obj.nota))" /></td>
+                <td>
+                    <a href="javascript:Calificacion.load_respuesta(@obj.evaluacion.evaluacionid);" class="btn btn-default btn-sm mr5"> <i class="fa fa-eye text-danger"></i> </a>
+                    <a href="javascript:Calificacion.save_nota(@obj.cabevaluacionid);" class="btn btn-default btn-sm mr5"> <i class="fa fa-save text-danger"></i> </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<div class="modal fade bs-modal-sm" tabindex=-1 role=dialog aria-hidden=true data-toggle="modal" data-backdrop="static" data-keyboard="false">
+    <div class=modal-dialog>
+        <div class=modal-content>
+            <div class=modal-header>
+                <!--<button type=button class=close data-dismiss=modal aria-hidden=true>×</button> -->
+                <h4 class=modal-title>Calificación</h4>
+            </div>
+            <div class=modal-body>
+                <p>Feel free to contact us for any issues you might have with our products.</p>
+                <div class=row>
+                    <div class=col-xs-12>
+                        <label>Message</label>
+                        <textarea class=form-control rows=3></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class=modal-footer>
+                <button type=button class="btn btn-default btn-cancel" data-dismiss=modal>Cancelar</button>
+                <!--<button type=button class="btn btn-success btn-start-question">Empezar</button>
+                <button type=button class="btn btn-success btn-next hide" disabled data-preg=0>Siguiente</button>
+                <button type=button class="btn btn-success btn-finish hide" data-cursoid=0 data-materialid=0>Finalizar</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="@Url.Content("~/Scripts/CabEvaluacion/Calificacion.js")"></script>

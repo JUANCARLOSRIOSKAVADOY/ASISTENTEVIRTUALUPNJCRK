@@ -1,0 +1,53 @@
+﻿@using Entidades;
+@{
+    List<BeCurso> listado = ViewBag.ListadoCurso as List<BeCurso>;
+}
+
+@if (ViewBag.Id != null && ViewBag.Id != "")
+{
+    <select id="@ViewBag.Id" name="@ViewBag.Id" tabindex="@ViewBag.TabIndex">
+        <option value="-1">Seleccione un curso</option>
+        @foreach (BeCurso obj in listado)
+        {
+            if (ViewBag.Value != null)
+            {
+                if (obj.id == ViewBag.Value)
+                {
+                    <option value="@obj.id" selected>@obj.descripcion</option>
+                }
+                else
+                {
+                    <option value="@obj.id">@obj.descripcion</option>
+                }
+            }
+            else
+            {
+                <option value="@obj.id">@obj.descripcion</option>
+            }
+        }
+    </select>
+}
+else
+{
+    <select id="DropdownCurso" name="DropdownCurso" tabindex="@ViewBag.TabIndex">
+        <option value="-1">Seleccione un curso</option>
+        @foreach (BeCurso obj in listado)
+        {
+            if (ViewBag.Value != null)
+            {
+                if (obj.id == ViewBag.Value)
+                {
+                    <option value="@obj.id" selected>@obj.descripcion</option>
+                }
+                else
+                {
+                    <option value="@obj.id">@obj.descripcion</option>
+                }
+            }
+            else
+            {
+                <option value="@obj.id">@obj.descripcion</option>
+            }
+        }
+    </select>
+}

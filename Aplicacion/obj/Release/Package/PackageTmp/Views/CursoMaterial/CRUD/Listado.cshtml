@@ -1,0 +1,19 @@
+﻿<section class="panel no-b">
+    <header class="panel-heading no-b">
+        <h5><b>Listado</b></h5>
+    </header>
+    <div class="panel-body">
+        @Html.Partial("CRUD/FiltrosListadoPrincipal")
+        <div class="table-responsive no-border"> 
+            <table id="tabla_CursoMaterial" data-source="CursoMaterial/OpListadoCursoMaterial" class="table table-bordered table-striped mg-t datatable"> 
+                <thead>
+                    <tr> 
+                        <th>CURSO</th>
+                        <th>MATERIAL</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table> 
+        </div>
+    </div>
+</section>

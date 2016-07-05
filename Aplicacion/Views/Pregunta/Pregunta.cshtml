@@ -1,0 +1,85 @@
+﻿@using Entidades
+@{
+    BePregunta Pregunta = ViewBag.Pregunta as BePregunta;
+    BeMaterial Material = ViewBag.Material as BeMaterial;
+}
+
+@if (Material.esEscritura)
+{
+    <div class=row>
+        <div class=col-sm-12>
+            <div class=service>
+                <div class="animated fadeInRight">
+                    <div class=widget>
+                        <div class=widget-body>
+                            <div class="service-description overflow-hidden pl25">
+                                <h5 class="nPregunta">RESPONSIVE</h5>
+                                <p class="speak">@Pregunta.descripcion</p>
+                                <!-- <h4><b class=count data-from=0 data-to=45645 data-appear-top-offset=-200>0</b></h4>
+                                <div class="progress progress-xs mt5 mb10">
+                                    <div class="progress-bar progress-bar-info" role=progressbar aria-valuenow=89 aria-valuemin=0 aria-valuemax=100 data-percent=89> </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=col-sm-12>
+            <div class=service>
+                <div class=widget>
+                    <div class=widget-body>
+                        <textarea rows="17" id="final_span" style="width:100%"></textarea>
+                        <!--<span id="final_span"></span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class=row>
+        <div class=col-sm-12>
+            <div class=service>
+                <div class="animated fadeInRight">
+                    <div class=widget>
+                        <div class=widget-body>
+                            <div class="col-sm-12">
+                                <div class="alert alert-info"> <strong>Atención!</strong> Clic sobre el micrófono para iniciar reconocimiento de voz, otro clic para enviar tu respuesta. </div>
+                            </div>
+                            <div class="text-center service-icon left huge mt25"> <i class=ti-mouse></i> </div>
+                            <div class="service-description overflow-hidden pl25">
+                                <h5 class="nPregunta">RESPONSIVE</h5>
+                                <p class="speak">@Pregunta.descripcion</p>
+                                <!-- <h4><b class=count data-from=0 data-to=45645 data-appear-top-offset=-200>0</b></h4>
+                                <div class="progress progress-xs mt5 mb10">
+                                    <div class="progress-bar progress-bar-info" role=progressbar aria-valuenow=89 aria-valuemin=0 aria-valuemax=100 data-percent=89> </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=col-sm-12>
+            <div class=service>
+                <div class=widget>
+                    <div class=widget-body>
+                        <button id="start_button" class="text-center service-icon left huge mt25">
+                            <img id="start_img" src="@Url.Content("~/Images/mic.gif")" alt="Start">
+                        </button>
+                        <span id="final_span"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 hide" id="contenedor_respuesta">
+            <div class=widget>
+                <div id="alert_success" class="alert alert-success hide"> <strong>Respuesta correcta!</strong></div>
+                <div id="alert_danger" class="alert alert-danger hide"> <strong>Respuesta incorrecta!</strong></div>
+            </div>
+        </div>
+    </div>
+}
+@*<script src="@Url.Content("~/Scripts/sintesis.js")"></script>*@

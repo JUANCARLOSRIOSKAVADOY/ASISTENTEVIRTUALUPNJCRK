@@ -1,0 +1,66 @@
+﻿<section class="panel no-b"> 
+    <header class="panel-heading no-b"> 
+        <h5><b>Formulario</b></h5> 
+    </header> 
+    <div class="panel-body"> 
+    <form id="frm_pregunta" role="form" class="form-horizontal" data-parsley-validate="">
+        <div class="row"> 
+            <div class="col-md-12"> 
+                <div class="form-group"> 
+                    <label class="col-sm-2 control-label">Id</label> 
+                    <div class="col-sm-2">
+                        <input class="form-control" readonly id="preguntaid" value=0>
+                    </div> 
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Curso</label>
+                    <div class="col-sm-2">
+
+                        @{
+                            ViewBag.Id = "DropdownCurso";
+                        }
+                        @Html.Partial("Controles/DropdownCurso")
+                        @{  ViewBag.Id = ""; }
+
+                        <!-- <input class="form-control" readonly id="cursoid" value=0> -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Material</label>
+                    <div class="col-sm-10">
+                        @{
+                            ViewBag.Id = "DropdownMaterial";
+                        }
+                        @Html.Partial("Controles/DropdownMaterial")
+                        @{  ViewBag.Id = ""; }
+                        <!-- <input disabled class="form-control" data-parsley-required="true" data-parsley-trigger="change" placeholder="Descripción" id="descripcion"> -->
+                    </div>
+                </div>                 
+                <div class="form-group"> 
+                    <label class="col-sm-2 control-label">Descripción</label> 
+                    <div class="col-sm-10"> 
+                        <textarea disabled rows="5" class="form-control" data-parsley-required="true" data-parsley-trigger="change" placeholder="Descripción" id="Descripcion">
+                        </textarea> 
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Entrenamiento</label>
+                    <div class=col-sm-10>
+                        <input disabled type="checkbox" id="esEntrenamiento">
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-12">
+                <div class="form-group text-center">
+                    <label></label> 
+                    <div> 
+                        <button id="btn_new" type="button" class="btn btn-primary">Nuevo</button>
+                        <button id="btn_save" class="btn btn-success btn-parsley" disabled>Guardar</button>
+                        <button id="btn_cancel" type="button" class="btn btn-danger" disabled>Cancelar</button>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </form> 
+    </div> 
+</section>

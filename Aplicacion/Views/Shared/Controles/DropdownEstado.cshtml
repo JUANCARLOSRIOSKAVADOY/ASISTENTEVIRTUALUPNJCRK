@@ -1,0 +1,16 @@
+﻿@if (ViewBag.Id != null && ViewBag.Id != "")
+{
+    <select id="@ViewBag.Id" name="@ViewBag.Id" tabindex="@ViewBag.TabIndex">
+        <option selected value="-1">Todos</option>
+        <option value="1">Activo</option>
+        <option value="0">Inactivo</option>
+    </select>
+}
+else
+{
+    <select id="DropdownEstado" name="DropdownEstado" tabindex="@ViewBag.TabIndex">
+        <option selected value="-1">Todos</option>
+        <option value="1">Activo</option>
+        <option value="0">Inactivo</option>
+    </select>
+}

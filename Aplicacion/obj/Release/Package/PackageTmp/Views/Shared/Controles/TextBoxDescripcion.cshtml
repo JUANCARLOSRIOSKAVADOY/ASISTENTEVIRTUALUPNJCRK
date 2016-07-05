@@ -1,0 +1,8 @@
+﻿@if (ViewBag.Id != null && ViewBag.Id != "")
+{
+    <input type="text" class="form-control" id="@ViewBag.Id" name="@ViewBag.Id" tabindex="@ViewBag.TabIndex" />
+}
+else
+{
+    <input type="text" class="form-control" id="TextBoxDescripcion" name="TextBoxDescripcion" tabindex="@ViewBag.TabIndex" />
+}

@@ -1,0 +1,59 @@
+﻿@using Entidades
+@{
+    ViewBag.Title = "Resultado";
+    Layout = "~/Views/Shared/PageMaster.cshtml";
+}
+@{
+    List<BeRptResultado> ListadoResultado = ViewBag.ListadoResultado as List<BeRptResultado>;
+}
+
+<header class="panel-heading text-uppercase no-b">
+    <h3><b>Resultado</b></h3>
+</header>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table no-m">
+            <thead>
+                <tr>
+                    <th class="col-md-5 pd-l-lg">
+                        <span class="pd-l-sm"></span>Estudiante
+                    </th>
+                    <th class="col-md-5">
+                        <span class="pd-l-sm"></span>Curso
+                    </th>
+                    <th class="col-md-5">
+                        <span class="pd-l-sm"></span>Material
+                    </th>
+                    <th class="col-md-5">
+                        <span class="pd-l-sm"></span>Nota
+                    </th>
+                    <th class="col-md-5">
+                        <span class="pd-l-sm"></span>Nivel
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (BeRptResultado obj in ListadoResultado)
+                {
+                    <tr>
+                        <td> 
+                            <span class="pd-l-sm"></span>@obj.usuario 
+                        </td>
+                        <td>
+                            <span class="pd-l-sm"></span>@obj.curso                        
+                        </td>
+                        <td>
+                            <span class="pd-l-sm"></span>@obj.material
+                        </td>
+                        <td>
+                            <span class="pd-l-sm"></span>@obj.nota
+                        </td>
+                        <td>
+                            <span class="pd-l-sm"></span>@obj.nivel
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
